@@ -15,5 +15,10 @@
  */
 
 body {
+    font-family: sans-serif;
     padding-top: 50px;
+}
+
+.btn {
+    margin-bottom: 1em;
 }

@@ -16,6 +16,7 @@ default: &default
   username: treebook
   password: treebook
   host: localhost
+  socket: /opt/lampp/var/mysql/mysql.sock
 
 development:
   <<: *default
@@ -50,5 +51,4 @@ test:
 production:
   <<: *default
   database: treebook_production
-  username: treebook
-  password: <%= ENV['TREEBOOK_DATABASE_PASSWORD'] %>
+  #password: <%= ENV['TREEBOOK_DATABASE_PASSWORD'] %>
